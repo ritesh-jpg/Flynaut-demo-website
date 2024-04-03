@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href=CSS"C:\Users\DELL\Downloads\CSS.CSS">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Photo with Heading</title>
+  <style>
+
+.rainbow-hover {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ff7576;
+    background-color: #2B3044;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    position: relative;
+    line-height: 24px;
+    border-radius: 9px;
+    box-shadow: 0px 1px 2px #2B3044,
+      0px 4px 16px #2B3044;
+    transform-style: preserve-3d;
+    transform: scale(var(--s, 1)) perspective(600px)
+      rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+    perspective: 600px;
+    transition: transform 0.1s;
+  }
+  
+  .sp {
+    background: linear-gradient(
+        90deg,
+        #866ee7,
+        #ea60da,
+        #ed8f57,
+        #fbd41d,
+        #2cca91
+      );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: block;
+  }
+  
+  .rainbow-hover:active {
+    transition: 0.3s;
+    transform: scale(0.93);
+  }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('background.jpg'); /* Path to your background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 62vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: black;
+    }
+
+    .heading {
+      text-align: center;
+      font-size: 3rem;
+      margin-top: 15vh; /* Adjust as needed */
+    }
+
+    .subheading {
+      text-align: center;
+      font-size: 2rem;
+      color: rgb(0, 0, 0)
+    }
+  </style>
+</head>
+<body>
+  <div class="heading">
+    <h1>FLYNAUT SaaS</h1>
+  </div>
+  <div class="subheading">
+    <h2>Landing page for any Occasion</h2>
+  </div>
+</body>
+</html>
+
+
+<button data-label="Register" class="rainbow-hover">
+    <span class="sp">Register</span>
+  </button>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: white; /* Set background color */
+    }
+
+    .container {
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .heading {
+      font-size: 3rem;
+    }
+
+    .subheading {
+      font-size: 1rem;
+      color: white;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .image-container img {
+      height: 300px; /* Adjust image height as needed */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1>Our Gallery</h1>
+    </div>
+    <div class="subheading">
+      <p>Explore our collection below:</p>
+    </div>
+    <div class="image-container">
+      <img src="image1.jpg" alt="Image 1">
+      <img src="image2.jpg" alt="Image 2">
+      <img src="image3.jpg" alt="Image 3">
+      <img src="image4.jpg" alt="Image 4">
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: white; /* Set background color */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      flex: 1;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .card .price {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #007bff; /* Set color for price */
+    }
+
+    .card button {
+      background-color: #007bff; /* Set background color for button */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.1s ease;
+    }
+
+    .card button:hover {
+      background-color: #0056b3; /* Set hover background color for button */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>Basic</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="price">$19.99</div>
+      <button>Buy Now</button>
+    </div>
+    <div class="card">
+      <h2>Standard</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="price">$39.99</div>
+      <button>Buy Now</button>
+    </div>
+    <div class="card">
+      <h2>Premium</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="price">$59.99</div>
+      <button>Buy Now</button>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

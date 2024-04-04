@@ -1,0 +1,24 @@
+.image-gallery {
+    text-align: center;
+  }
+  
+  .image-gallery img {
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    margin: 10px;
+    border-radius: 10px; /* Optional: adds rounded corners */
+    border: 2px solid #333; /* Add border to images */
+  }
+  
+  .gallery-heading {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  
+  .gallery-subheading {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  
